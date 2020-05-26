@@ -1,4 +1,4 @@
-#Phansalkar local image thresholding
+# Phansalkar local image thresholding
 Phansalkar binarization method is a modification of Sauvola's thresholding method to deal with low contrast images.
 
 The Phansalkar method is described in:
