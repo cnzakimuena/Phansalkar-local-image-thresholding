@@ -51,7 +51,7 @@ deviation = (meanSquare - mean.^2).^0.5;
 R = max(deviation(:));
 p = 2;
 q = 10;
-% threshold = mean.*(1 + k * (deviation / R-1));
-threshold = mean.*(1 + p*exp(-q*mean) + k * ((deviation / R)-1));
+threshold = mean.*(1 + k * ((deviation / R)-1));
+% threshold = mean.*(1 + p*exp(-q*mean) + k * ((deviation / R)-1));
 
 output = (image > threshold);
